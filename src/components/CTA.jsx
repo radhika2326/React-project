@@ -1,4 +1,5 @@
-
+import Button from "./Button";
+import { siteConfig } from "../data/siteConfig";
 import "./CTA.css";
 
 function CTA() {
@@ -8,13 +9,13 @@ function CTA() {
         <h2>Ready to Build Your Dream Kitchen?</h2>
 
         <p>
-          Book a free design consultation and get a personalized 3D kitchen
-          plan for your home.
+          Book a free design consultation and get a personalized 3D kitchen plan
+          for your home.
         </p>
 
-        <a href="mailto:info@moco.com" className="cta__button">
+        <Button href={`mailto:${siteConfig.email}`} variant="light" size="xl">
           Book a Free Design Session
-        </a>
+        </Button>
       </div>
     </section>
   );

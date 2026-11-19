@@ -1,26 +1,6 @@
-
 .testimonials {
   padding: 100px 7%;
   background: #edf6f1;
-}
-
-.testimonials__heading {
-  text-align: center;
-  margin-bottom: 65px;
-}
-
-.testimonials__heading p {
-  color: #336b4c;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin-bottom: 18px;
-}
-
-.testimonials__heading h2 {
-  font-family: var(--font-head);
-  font-size: clamp(38px, 5vw, 60px);
-  color: #202923;
 }
 
 .testimonials__grid {

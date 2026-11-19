@@ -12,25 +12,24 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
+  return (
+    <>
+      <Navbar />
 
-    return (
-        <>
-            <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <WhyMoco />
+        <Designs />
+        <Gallery />
+        <Process />
+        <Testimonials />
+        <CTA />
+      </main>
 
-            <main>
-                <Hero />
-                <About />
-                <WhyMoco />
-                <Designs />
-                <Gallery />
-                <Process />
-                <Testimonials />
-                <CTA />
-            </main>
-
-            <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 }
 
 export default App;
