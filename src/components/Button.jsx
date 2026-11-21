@@ -1,14 +1,37 @@
 import "./Button.css";
 
-function Button({ href, variant = "primary", size = "lg", onClick, children }) {
+// variant: "primary" | "outline" | "light"   (colour style)
+// size:    "sm" | "lg" | "xl"                (how big)
+// children: the text written between <Button> and </Button>
+// With an href it is a link (<a>). Without one it is a real <button>
+// that runs onClick, for actions like "Load More".
+function Button({
+  href,
+  variant = "primary",
+  size = "lg",
+  onClick,
+  disabled,
+  children,
+}) {
+  const className = `btn btn--${variant} btn--${size}`;
+
+  if (href) {
+    return (
+      <a href={href} className={className} onClick={onClick}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={href}
-      className={`btn btn--${variant} btn--${size}`}
+    <button
+      type="button"
+      className={className}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
-    </a>
+    </button>
   );
 }
 

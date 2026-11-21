@@ -12,6 +12,33 @@
   gap: 20px;
 }
 
+.gallery__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.gallery__page {
+  min-width: 70px;
+  text-align: center;
+  font-weight: 600;
+  color: #252d29;
+}
+
+.gallery__item--loading {
+  background: #e4e0db;
+}
+
+.gallery__error {
+  min-height: 1.5em;
+  margin-top: 24px;
+  text-align: center;
+  color: #a33;
+}
+
 .gallery__item {
   overflow: hidden;
   border-radius: 20px;

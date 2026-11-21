@@ -15,7 +15,7 @@ function Navbar() {
       setIsScrolled(window.scrollY > 40);
     };
 
-    // Desktop par menu close karna
+    // Close the mobile menu when the screen becomes desktop size
     const handleResize = () => {
       if (window.innerWidth > 960) {
         setIsOpen(false);
@@ -25,7 +25,7 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
 
-    // Page load hone par bhi scroll check karo
+    // Also check the scroll position once on page load
     handleScroll();
 
     // Cleanup
@@ -40,7 +40,7 @@ function Navbar() {
     setIsOpen((open) => !open);
   };
 
-  // Link click hone par menu close
+  // Close the menu when a link is clicked
   const closeMenu = () => {
     setIsOpen(false);
   };

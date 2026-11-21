@@ -6,7 +6,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
       <div className="footer__container">
         <div className="footer__grid">
           {/* Brand Column */}
